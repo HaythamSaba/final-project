@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/product.css">
+    <!-- Font Awesome icon Library links -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <!-- bootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg mt-3  pt-5 pt-lg-3 mt-auto">
+                <div class="container">
+                    <img src="images/main-logo.png" alt="logo" class="me-lg-3 img">
+                    <img src="images/black-main-logo.png" alt="logo" class="me-lg-3 img2">
+                    <a class="navbar-brand" href="#home.html">E-Shop</a>
+                    <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-auto mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link men">Men</a>
+                            </li>
+                            <li class="nav-item mb-3 mb-lg-0">
+                                <a class="nav-link " href="#">Women</a>
+                            </li>
+                            <li class="nav-item mb-3 mb-lg-0">
+                                <a class="nav-link" href="#">Kids</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass me-3  pointer-event"></i>
+                        <button data-bs-target="#staticBackdrop" data-bs-toggle="offcanvas">
+                            <i class="fa-solid fa-cart-shopping me-3  pointer-event"></i>
+                        </button>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    </div>
+            </nav>
+    <!-- Start Info Section -->
+    <div class="info ">
+        <div class="container">
+            <div class="path">
+                <i class="fa-light fa-house"></i>
+                <p> / Men`s Tops / T-Shirt / T-Shirt Summer Vibes</p>
+            </div>
+            <div class="info-section">
+                <div class="product-img">
+                    <div class="clothes">
+                        <div class="small">
+                            <img src="images/white.png" class="white" alt="" data-color="white">
+                            <img src="images/black.png" class="black" alt="" data-color="black">
+                            <img src="images/bage.png" class="bage" alt="" data-color="bage">
+                            <img src="images/blue.png" class="blue" alt="" data-color="blue">
+                        </div>
+                        <div class="big">
+                            <img src="images/white.png" alt="" data-color=''>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="delivery">
+                        <div class="desc">
+                            <div class="icon">
+                                <i class="fa-light fa-truck-moving"></i>
+                            </div>
+                            <div class="content">
+                                <h5>Standard shipment</h5>
+                                <p>Free within 3-6 business days</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="icon">
+                                <i class="fa-light fa-truck-clock"></i>     
+                            </div>
+                            <div class="content">
+                                <h5>Express delivery</h5>
+                                <p>$35,00 available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale">
+                        <div class="sale-div">Sale</div>
+                        <div class="product-id">
+                            <p>Product ID</p>
+                            <p>261311</p>
+                        </div>
+                    </div>
+                    <div class="t-shirt">T-Shirt Summer Vibes</div>
+                    <div class="price-sec">
+                        <div class="price">
+                            <span>$</span>
+                            <p>89.99</p>
+                            <p>$119.99</p>
+                        </div>
+                        <div class="tip">HOUSE MY BRAND</div>
+                    </div>
+                    <div class="color-sec">
+                        <p>Color :</p>
+                        <div class="color">
+                            <div class="black-color"  data-color="black" onclick="changeColor('black')"></div>
+                            <div class="bage-color" data-color="bage" onclick="changeColor('bage')"></div>
+                            <div class="blue-color"  data-color="blue" onclick="changeColor('blue')"></div>
+                            <div class="white-color"  data-color="white" onclick="changeColor('white')">
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <p>Size:</p>
+                        <select>
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="Large">L</option>
+                            <option value="x-large">XL</option>
+                        </select>
+                    </div>
+                    <p>Quantity:</p>
+                    <div class="quantity-sec">
+                        <div class="quantity">
+                            <button class="minus">-</button>
+                            <span class="span">1</span>
+                            <button class="plus">+</button>
+                        </div>
+                        <div class="add">
+                            <p>Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Info Section-->
+    <!-- Start Description and Review -->
+    <div class="d-flex">
+        <div class="container">
+            <ul class="nav nav-pills mb-3 mt-5 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item " role="presentation">
+                    <button class="nav-link active aa" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
+                </li>
+            </ul>
+            <div class="tab-content m-auto" id="pills-tabContent">
+                <div class="tab-pane show active m-auto one" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="content-1 text-center">
+                                <div class="image"><i class="fa-light fa-memo-circle-info"></i></div>
+                                <h4>Details and product description</h4>
+                                <p>White Summer Vibes T-shirt in the uiKit line with a colorful print. <br> Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts.</p>
+                    </div>
+                    <div class="content-1 text-center">
+                        <div class="image"><i class="fa-light fa-pen-ruler"></i></div>
+                        <h4>Material(s) and care</h4>
+                        <p>Body: 98% COTTON - 2% ELASTANE</p>
+                        <img src="images/Image 2.png" alt="">
+                    </div>
+                </div>
+                <div class="tab-pane fade second" id="pills2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="rate-sec text-center">
+                            <div class="div">
+                                <div class="stars">
+                                    <span>4.5</span>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <p class="people"><i class="fa-thin fa-user"></i>81 all opinions</p>
+                                </div>
+                                <div class="polls">
+                                    <div class="star1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>1</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="star2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>1</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="star3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>1</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="star4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>1</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="star5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>1</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="opinion d-flex justify-content-center mt-4">
+                                <button class="add-op">ADD OPINION</button>
+                            </div>
+                        </div>
+                        <div class="customer-opinions">
+                            <div class="div-person">
+                                <div class="image">
+                                    <img src="images/customer-1.png" alt="">
+                                </div>
+                                <div class="customer-info">
+                                    <h5>John Doe</h5>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                            </div>
+                            <div class="div-person">
+                                <div class="image">
+                                    <img src="images/customer-2.png" alt="">
+                                </div>
+                                <div class="customer-info">
+                                    <h5>Eveline Gosok</h5>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>                        </div>
+                                </div>
+                            <div class="div-person">
+                                    <div class="image">
+                                        <img src="images/customer-3.png" alt="">
+                                    </div>
+                                    <div class="customer-info">
+                                        <h5>Anne Okombo</h5>
+                                        <div>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half"></i>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select">
+        <div class="container">
+            <div class="more">
+                <p>Selected just for you</p>
+                <button class="btn btn-primary">SHOW MORE</button>
+            </div>
+            <div class="selection-section">
+                <div class="selected">
+                    <div class="img">
+                        <img src="images/white.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>T-Shirt Summer Vibes</p>
+                        <span class="first">$89.99</span>
+                        <span class="second">$119.99</span>
+                    </div>
+                </div>
+                <div class="selected">
+                    <div class="img">
+                        <img src="images/shirt-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Loose Knit 3/4 Sleeve</p>
+                        <span>$119.99</span>
+                    </div>
+                </div>
+                <div class="selected">
+                    <div class="img">
+                        <img src="images/shirt-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Basic Slim Fit T-Shirt</p>
+                        <span>$79.99</span>
+                    </div>
+                </div>
+                <div class="selected">
+                    <div class="img">
+                        <img src="images/shirt-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Loose Textured T-Shirt</p>
+                        <span>$119.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Description and Review -->
+    <!-- Start Subscribe Section -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="subscribe-section">
+                <div class="subscribe-conntent">
+                    <p>Subscribe to our newsletter and receive exclusive offers every week</p>
+                    <form action="">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Subscribe Section -->
+    <!-- Start Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section row row-sm-1 row-lg-2">
+                <div class="footer-content-1 col ">
+                    <div class="logo-footer col-lg-6">
+                        <img src="images/black-main-logo.png" alt="">
+                        <p><span>E</span>-Shop</p>
+                    </div>
+                    <div class="footer-desc">
+                        <p>House My Brand designs clothing for the young, the old & everyone in between – but most importantly, for the fashionable</p>
+                    </div>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-content-2 col-lg-6">
+                    <div class="row row-sm-1 row-lg-2">
+                        <div class="info col-lg-4">
+                            <p>Shopping online</p>
+                            <a href="">Order Status</a>
+                            <a href="">Shipping and Delivery</a>
+                            <a href="">Returns</a>
+                            <a href="">Payment Options</a>
+                            <a href="">Contact Us</a>
+                        </div>
+                        <div class="info col-lg-4">
+                            <p>Information</p>
+                            <a href="">Gift Cards</a>
+                            <a href="">Find a store</a>
+                            <a href="">Newsletter</a>
+                            <a href="">Bacome a member</a>
+                            <a href="">Site feedback</a>
+                        </div>
+                        <div class="info col-lg-4">
+                            <p>Contact</p>
+                            <a href="">store@uikit.com</a>
+                            <a href="">Hotline: +1 131 138 138</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- Start copyright Section -->
+    <div class="copyright">
+        <div class="container">
+            <div class="copy-right">DESIGN BY Haytham Saba - © 2023. ALL RIGHTS RESERVED.</div>
+        </div>
+    </div>
+    <!-- End copyright Section -->
+    <div class="offcanvas offcanvas-start reset" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="container">
+            <div class="offcanvas-header mb-4">
+                <h5 class="offcanvas-title mb-3" id="staticBackdropLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+                <div class="shopping-header mb-4">
+                    <div>Shopping Card</div>
+                    <div>
+                        <i class="fa-regular fa-cart-shopping-fast"></i>
+                        <span></span>
+                        <i class="fa-light fa-truck fa-flip-horizontal"></i>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Color</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Price</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="checkout">
+                    <div class="continue">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="#" id="continue_shopping"><h5><b>Continue Shopping</b></h5></a>
+                        <button class="btn btn-danger" id="del">Delete All Items</button>
+                    </div>
+                    <div class="total-info">
+                        <div class="promo-form">
+                            <form action="">
+                                <input type="text" placeholder="Promo code" class="form-style">
+                            </form>
+                        </div>
+                        <div class="total">
+                            <p>Total cost</p>
+                            <p class="total-price">$</p>
+                        </div>
+                        <div class="checkbtn">
+                            <button>CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
